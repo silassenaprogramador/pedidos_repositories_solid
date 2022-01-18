@@ -15,9 +15,9 @@ class PedidoController extends Controller
 
     private $serviceModel;
 
-    public function __construct(PedidoService $pedidoModel)
+    public function __construct(PedidoService $pedidoService)
     {
-        $this->serviceModel = $pedidoModel;
+        $this->serviceModel = $pedidoService;
     }
 
     use BaseCrudController;
